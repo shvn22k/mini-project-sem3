@@ -21,11 +21,13 @@ feature_names = ['pressure', 'dewpoint', 'humidity', 'cloud', 'sunshine',
 wheat = load_learner(r'C:\Projects\mini-project-sem3\Models\wheat.pkl', pickle_module=pickle)
 rice = load_learner(r'C:\Projects\mini-project-sem3\Models\rice.pkl', pickle_module=pickle)
 sugarcane = load_learner(r'C:\Projects\mini-project-sem3\Models\sugarcane.pkl', pickle_module=pickle)
+tomato = load_learner(r'C:\Projects\mini-project-sem3\Models\tomato.pkl', pickle_module=pickle)
 
 disease_models = {
     'wheat': wheat,
     'rice': rice,
-    'sugarcane': sugarcane
+    'sugarcane': sugarcane,
+    'tomato': tomato
 }
 
 def predict_crop_disease(crop, image):
